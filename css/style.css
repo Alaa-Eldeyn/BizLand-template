@@ -623,7 +623,7 @@ header nav label{
 }
 @media (max-width: 568px){
     .brands .container{
-        gap: 1rem;
+        gap: 2.5rem;
     }
 }
 .brands .client{
