@@ -270,14 +270,14 @@
             </div>
             <div class="pf-content">
                 <ul>
-                    <li><a href="#">ALL</a></li>
-                    <li><a href="#">APP</a></li>
-                    <li><a href="#">CARD</a></li>
-                    <li><a href="#">WEB</a></li>
+                    <li data-cat=".all" class="active">ALL</li>
+                    <li data-cat=".app">APP</li>
+                    <li data-cat=".card">CARD</li>
+                    <li data-cat=".web">WEB</li>
                 </ul>
                 <div class="gallery">
-                    <div>
-                        <img src="imgs/portfolio-1.jpg" alt="portfolio-2">
+                    <div class="img-cat">
+                        <img class="all app" src="imgs/portfolio-1.jpg" alt="portfolio-2">
                         <div class="overlay">
                             <div>
                                 <h5>App 1</h5>
@@ -289,8 +289,8 @@
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <img src="imgs/portfolio-6.jpg" alt="portfolio-1">
+                    <div class="img-cat">
+                        <img class="all app" src="imgs/portfolio-6.jpg" alt="portfolio-1">
                         <div class="overlay">
                             <div>
                                 <h5>App 1</h5>
@@ -302,8 +302,47 @@
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <img src="imgs/portfolio-2.jpg" alt="portfolio-3">
+                    <div class="img-cat">
+                        <img class="all web" src="imgs/portfolio-2.jpg" alt="portfolio-3">
+                        <div class="overlay">
+                            <div>
+                                <h5>Web 1</h5>
+                                <p>Web</p>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-solid fa-plus"></i>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-cat">
+                        <img class="all web" src="imgs/portfolio-5.jpg" alt="portfolio-4">
+                        <div class="overlay">
+                            <div>
+                                <h5>Web 1</h5>
+                                <p>Web</p>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-solid fa-plus"></i>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-cat">
+                        <img class="all web" src="imgs/portfolio-9.jpg" alt="portfolio-5">
+                        <div class="overlay">
+                            <div>
+                                <h5>Web 1</h5>
+                                <p>Web</p>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-solid fa-plus"></i>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-cat">
+                        <img class="all app" src="imgs/portfolio-3.jpg" alt="portfolio-6">
                         <div class="overlay">
                             <div>
                                 <h5>App 1</h5>
@@ -315,12 +354,12 @@
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <img src="imgs/portfolio-5.jpg" alt="portfolio-4">
+                    <div class="img-cat">
+                        <img class="all card" src="imgs/portfolio-4.jpg" alt="portfolio-7">
                         <div class="overlay">
                             <div>
-                                <h5>App 1</h5>
-                                <p>App</p>
+                                <h5>Card 1</h5>
+                                <p>Card</p>
                             </div>
                             <div class="icon">
                                 <i class="fa-solid fa-plus"></i>
@@ -328,12 +367,12 @@
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <img src="imgs/portfolio-9.jpg" alt="portfolio-5">
+                    <div class="img-cat">
+                        <img class="all card" src="imgs/portfolio-7.jpg" alt="portfolio-8">
                         <div class="overlay">
                             <div>
-                                <h5>App 1</h5>
-                                <p>App</p>
+                                <h5>Card 1</h5>
+                                <p>Card</p>
                             </div>
                             <div class="icon">
                                 <i class="fa-solid fa-plus"></i>
@@ -341,51 +380,12 @@
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <img src="imgs/portfolio-3.jpg" alt="portfolio-6">
+                    <div class="img-cat">
+                        <img class="all card" src="imgs/portfolio-8.jpg" alt="portfolio-9">
                         <div class="overlay">
                             <div>
-                                <h5>App 1</h5>
-                                <p>App</p>
-                            </div>
-                            <div class="icon">
-                                <i class="fa-solid fa-plus"></i>
-                                <i class="fa-solid fa-link"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="imgs/portfolio-4.jpg" alt="portfolio-7">
-                        <div class="overlay">
-                            <div>
-                                <h5>App 1</h5>
-                                <p>App</p>
-                            </div>
-                            <div class="icon">
-                                <i class="fa-solid fa-plus"></i>
-                                <i class="fa-solid fa-link"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="imgs/portfolio-7.jpg" alt="portfolio-8">
-                        <div class="overlay">
-                            <div>
-                                <h5>App 1</h5>
-                                <p>App</p>
-                            </div>
-                            <div class="icon">
-                                <i class="fa-solid fa-plus"></i>
-                                <i class="fa-solid fa-link"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="imgs/portfolio-8.jpg" alt="portfolio-9">
-                        <div class="overlay">
-                            <div>
-                                <h5>App 1</h5>
-                                <p>App</p>
+                                <h5>Card 1</h5>
+                                <p>Card</p>
                             </div>
                             <div class="icon">
                                 <i class="fa-solid fa-plus"></i>
@@ -715,10 +715,6 @@
             <p>Designed by <a href="#">BootstrapMade</a></p>
         </div>
     </footer>
-    <script>
-        let toTop = document.getElementById("toTop");
-        window.onscroll = () => { (window.scrollY >= 300) ? toTop.style.right="1rem" : toTop.style.right='-100px' };
-        toTop.onclick = () => { window.scrollTo({top: 0,behavior:"smooth",})};
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
