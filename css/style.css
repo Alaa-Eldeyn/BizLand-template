@@ -1,3 +1,24 @@
+/* 
+    1. Globals
+    2. Top toolbar
+    3. Header
+    4. Landing section
+        - Features cards
+    5. About section
+        - Progress section
+        - Count boxes section
+        - Clients section
+    6. Services section
+    7. Testimonials section
+    8. Portfolio section
+    9. Team section
+    10. Pricing section
+    11. F.A.Q section
+    12. Contact section
+        - Joining section
+    13. Footer
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,500&display=swap');
 *{
     box-sizing: border-box;
@@ -623,7 +644,7 @@ header nav label{
 }
 @media (max-width: 568px){
     .brands .container{
-        gap: 2.5rem;
+        gap: 1rem;
     }
 }
 .brands .client{
@@ -763,15 +784,14 @@ header nav label{
     gap: 15px;
     text-align: center;
 }
-.portfolio .pf-content ul a{
+.portfolio .pf-content ul li{
     color: #222222;
     transition: var(--mainTransition);
     font-weight: 600;
+    user-select: none;
+    cursor: pointer;
 }
-.portfolio .pf-content ul li:first-of-type a{
-    color: var(--mainColor);
-}
-.portfolio .pf-content ul li:hover a{
+.portfolio .pf-content ul .active, .portfolio .pf-content ul li:hover{
     color: var(--mainColor);
 }
 .portfolio .pf-content .gallery{
@@ -791,18 +811,17 @@ header nav label{
     .portfolio .pf-content .gallery{
         columns: 1;
     }
-    .portfolio .pf-content .gallery div{
+    .portfolio .pf-content .gallery .img-cat{
         max-width: 450px;
         margin: auto;
     }
 }
-.portfolio .pf-content .gallery div{
+.portfolio .pf-content .gallery .img-cat{
     position: relative;
-    transition: var(--mainTransition);
     margin-bottom: 1rem;
 }
-.portfolio .pf-content .gallery div:hover .overlay{
-    bottom: 0;
+.portfolio .pf-content .gallery .img-cat:hover .overlay{
+    bottom: 10px;
     opacity: .9;
 }
 .portfolio .pf-content .gallery .overlay{
@@ -817,6 +836,7 @@ header nav label{
     padding: 1rem 1.3rem;
     justify-content: space-between;
     align-items: center;
+    transition: var(--mainTransition);
 }
 .portfolio .pf-content .gallery .overlay h5{
     font-size: 1.2rem;
@@ -1266,10 +1286,7 @@ footer .copyright p a{
 }
 @media(max-width: 768px){
     footer .copyright{
-        font-size: .7rem;
-        flex-direction: column;
-        padding: 15px;
-        gap: 10px;
+        font-size: .6rem;
     }
 }
 /* End footer section */
